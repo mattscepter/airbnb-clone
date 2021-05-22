@@ -5,6 +5,7 @@
     padding: 20px;
     border-bottom: 1px solid lightgray;
     cursor: pointer;
+    align-items: center;
 }
 
 .searchResult:hover{
@@ -12,6 +13,7 @@
 }
 
 .searchResult>img{
+    object-fit: fill;
     height: 200px;
     width: 350px;
     border-radius: 10px;
@@ -19,6 +21,7 @@
 }
 
 .searchResult__info{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,3 +73,57 @@
     bottom: 20px;
     right: 30px;
 }
+
+@media screen and (max-width: 760px){
+    .searchResult__price{
+        position:static;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .searchResult__info{
+        padding-left: 20px;
+    }
+    .searchResult__price{
+        position:static;
+    }
+
+    .searchResult__infoBottom{
+        flex-direction: column;
+    }
+    .searchResult__price>p{
+        text-align: left;
+    }
+
+    .searchResult>img{
+        transform: scale(0.9);
+    }
+    
+
+}
+
+@media screen and (max-width: 600px){
+    .searchResult{
+        flex-direction: column;
+        margin: 0;
+    }
+    .searchResult>img{
+        transform: scale(0.85);
+    }
+    .searchResult__info{
+    
+    }
+    .searchResult__heart{
+        position: absolute;
+        top: 222px;
+        right: 0px;
+    }
+    .searchResult__infoTop{
+        width: 70vw;
+    }
+    
+    
+
+}
+

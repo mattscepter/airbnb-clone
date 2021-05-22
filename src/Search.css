@@ -1,8 +1,10 @@
 .search{
     position: absolute;
     top: 35px;
-    left: 30%;
-    /* width: 100vw; */
+    z-index: 99;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 .search>h2{
@@ -44,4 +46,30 @@
 .search>button:hover{
     background-color: white;
     color: #ff7779;
+}
+
+
+@media screen and (max-width: 600px){
+    .search{
+        top: -3px;
+        z-index: 99;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%) scale(0.8)
+    }
+}
+
+@media screen and (max-width: 480px){
+    .search{
+        font-size: 15px;
+        top: -41px;
+        z-index: 99;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%) scale(0.6)
+    }
+    .search>button{
+        font-size: 20px;
+    }
+
 }

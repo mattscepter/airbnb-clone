@@ -12,9 +12,8 @@ function Banner() {
     return (
         <div className="banner">
             <dvi className="banner__search">
-                {showSearch && <Search/>}
-
                 <Button onClick={()=> setshowSearch(!showSearch)} variant="outlined" className="banner__searchbutton">{showSearch?"Hide":"Search Dates"}</Button>
+                {showSearch && <Search/>}
             </dvi>
             <div className="banner__info">
                 <h1>

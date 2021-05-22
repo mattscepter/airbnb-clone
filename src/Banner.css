@@ -7,8 +7,9 @@
 .banner__info{
     background-color: black;
     color: white;
-    padding: 25vh 50px 50px 40px;
     width: 300px;
+    padding: 20px;
+    height: 60%;
 }
 
 .banner__info>button{
@@ -38,4 +39,7 @@
     font-weight: 900 !important;
     text-transform: inherit !important;
     color: #ff7779 !important;
+}
+
+@media screen and (max-width: 600px){
 }
